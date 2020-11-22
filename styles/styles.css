@@ -1,33 +1,32 @@
 body {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   background-color: rgb(212, 176, 247);
-  /* font: 16px; */
 }
-div {
-  padding: 0;
-  margin: 0;
-}
+
 ul {
   list-style-type: none;
   margin-top: 12px;
   position: fixed;
   top: 0;
   right: 0;
+  /* background-color: white; */
 }
 
 #nav li {
-  display: inline;
+  display: inline-block;
 }
 
-nav li a {
-  border: 1px solid grey;
+#nav li a {
+  border: none;
   padding: 12px;
   background-color: rgba(233, 211, 211, 0.663);
   text-decoration: none;
   color: black;
+  border-radius: 3px;
+  margin: 0px;
 }
-nav li a:hover {
+#nav li a:hover {
   background-color: darkslategrey;
   color: white;
   transition-duration: 1s;
@@ -50,20 +49,45 @@ nav li a:hover {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  min-width: 5em;
 }
 #intro button:hover {
   /* padding: 20px; */
-  background-color: rgba(0, 0, 0, 0.1);
-  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition-duration: 0.3s;
+  box-shadow: 0 0 9px 9px rgba(230, 227, 227, 0.407);
 }
 #about {
   padding: 10px;
   height: 20em;
   background-color: rgba(233, 0, 0, 0.363);
+  position: relative;
 }
 #about h2 {
   margin: 0;
   padding: 5px;
+}
+
+#displayImage {
+  display: inline-block;
+  padding: 120px;
+  background-color: white;
+  position: absolute;
+  /* left: 180px; */
+  /* top: 50px; */
+  width: 5em;
+  margin: 5px;
+}
+
+#desc {
+  position: absolute;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.111);
+  width: 40%;
+  padding: 20px;
+  height: auto;
+  color: white;
+  overflow: auto;
 }
 #projects {
   padding: 10px;
