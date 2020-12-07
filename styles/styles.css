@@ -56,12 +56,20 @@ ul {
   background-color: rgba(0, 0, 0, 0.05);
   transition-duration: 0.3s;
   box-shadow: 0 0 9px 9px rgba(230, 227, 227, 0.407);
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 410px) {
   #intro button {
     width: 100%;
     margin: 2px;
+  }
+
+  #intro button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition-duration: 0.3s;
+    box-shadow: 0 0 9px 9px rgba(230, 227, 227, 0.407);
+    transform: scale(1.1);
   }
 
   #nav li a {
